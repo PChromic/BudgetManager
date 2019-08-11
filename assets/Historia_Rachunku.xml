@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="iso-8859-2"?>
+<account-history>
+  <search>
+    <account>50102055581111144892400014</account>
+    <date since="2019-07-04" to="2019-08-04"/>
+    <filtering>Wszystkie</filtering>
+  </search>
+  <operations>
+    <operation id="2654">
+      <order-date>2019-07-02</order-date>
+      <exec-date>2019-07-04</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-10.00</amount>
+      <ending-balance curr="PLN">15044.14</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: LOOK OPTYK Data wykonania: 2019-07-02 00:00:00 Numer referencyjny: 74378839183025585670678 Oryginalna kwota operacji: 10.00 PLN Numer karty: * 7861 Data waluty: 2019-07-02</description>
+    </operation>
+    <operation id="2655">
+      <order-date>2019-07-02</order-date>
+      <exec-date>2019-07-04</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-240.00</amount>
+      <ending-balance curr="PLN">14804.14</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: LOOK OPTYK Data wykonania: 2019-07-02 00:00:00 Numer referencyjny: 74378839183025585169325 Oryginalna kwota operacji: 240.00 PLN Numer karty: * 7861 Data waluty: 2019-07-02</description>
+    </operation>
+    <operation id="2656">
+      <order-date>2019-07-04</order-date>
+      <exec-date>2019-07-05</exec-date>
+      <class>DEBIT</class>
+      <type>Wypłata z bankomatu</type>
+      <amount curr="PLN">-50.00</amount>
+      <ending-balance curr="PLN">14754.14</ending-balance>
+      <description>Tytuł: PKO BP 10205242S1WR3199W2100C4576 Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: PL. GRUNWALDZKI 22 Data wykonania: 2019-07-04 20:08:58 Numer referencyjny: 10205242S1WR3199W2100C4576 Oryginalna kwota operacji: 50.00 PLN Numer karty: * 7861 Data waluty: 2019-07-04</description>
+    </operation>
+    <operation id="2657">
+      <order-date>2019-07-03</order-date>
+      <exec-date>2019-07-05</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-19.90</amount>
+      <ending-balance curr="PLN">14734.24</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: PIZZA FARINA Data wykonania: 2019-07-03 00:00:00 Numer referencyjny: 74230789185070055958131 Oryginalna kwota operacji: 19.90 PLN Numer karty: * 7861 Data waluty: 2019-07-03</description>
+    </operation>
+    <operation id="2658">
+      <order-date>2019-07-04</order-date>
+      <exec-date>2019-07-06</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-13.50</amount>
+      <ending-balance curr="PLN">14720.74</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: MAMINE SMAKI Data wykonania: 2019-07-04 00:00:00 Numer referencyjny: 74162439186064336073383 Oryginalna kwota operacji: 13.50 PLN Numer karty: * 7861 Data waluty: 2019-07-04</description>
+    </operation>
+    <operation id="2659">
+      <order-date>2019-07-06</order-date>
+      <exec-date>2019-07-06</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-121.24</amount>
+      <ending-balance curr="PLN">14599.50</ending-balance>
+      <description>Dane adr. rach. przeciwst.: PAYPRO S.A. UL. KANCLERSKA 15 60-327 POZNAŃ Tytuł: P24-C02-H94-K87 Data waluty: 2019-07-06</description>
+      <other-side>
+        <owner>
+          <line>PAYPRO S.A.</line>
+          <line>
+            
+          </line>
+          <line>UL. KANCLERSKA 15</line>
+          <line>60-327 POZNAŃ</line>
+        </owner>
+      </other-side>
+    </operation>
+    <operation id="2660">
+      <order-date>2019-07-05</order-date>
+      <exec-date>2019-07-07</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-18.00</amount>
+      <ending-balance curr="PLN">14581.50</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: WESKLAN Data wykonania: 2019-07-05 00:00:00 Numer referencyjny: 74163589186000112140096 Oryginalna kwota operacji: 18.00 PLN Numer karty: * 7861 Data waluty: 2019-07-05</description>
+    </operation>
+    <operation id="2661">
+      <order-date>2019-07-05</order-date>
+      <exec-date>2019-07-07</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-14.99</amount>
+      <ending-balance curr="PLN">14566.51</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: ZABKA Z5060 K.1 Data wykonania: 2019-07-05 00:00:00 Numer referencyjny: 74230789187070115044607 Oryginalna kwota operacji: 14.99 PLN Numer karty: * 7861 Data waluty: 2019-07-05</description>
+    </operation>
+    <operation id="2662">
+      <order-date>2019-07-05</order-date>
+      <exec-date>2019-07-07</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-3.49</amount>
+      <ending-balance curr="PLN">14563.02</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: 1-Minute 14904 Data wykonania: 2019-07-05 00:00:00 Numer referencyjny: 74378839186025689380510 Oryginalna kwota operacji: 3.49 PLN Numer karty: * 7861 Data waluty: 2019-07-05</description>
+    </operation>
+    <operation id="2663">
+      <order-date>2019-07-05</order-date>
+      <exec-date>2019-07-07</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-11.00</amount>
+      <ending-balance curr="PLN">14552.02</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: CEREGIELE SP Z OO Data wykonania: 2019-07-05 00:00:00 Numer referencyjny: 74169509186951869797599 Oryginalna kwota operacji: 11.00 PLN Numer karty: * 7861 Data waluty: 2019-07-05</description>
+    </operation>
+    <operation id="2664">
+      <order-date>2019-07-09</order-date>
+      <exec-date>2019-07-09</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-40.00</amount>
+      <ending-balance curr="PLN">14512.02</ending-balance>
+      <description>Nr rach. przeciwst.: 50 1020 5558 1111 1900 1730 0049 Dane adr. rach. przeciwst.: JAN SOKOŁOWSKI Tytuł: T-SHIRT ORANDO Data waluty: 2019-07-09</description>
+      <other-side>
+        <owner>
+          <line>JAN SOKOŁOWSKI</line>
+        </owner>
+        <account>50102055581111190017300049</account>
+      </other-side>
+    </operation>
+    <operation id="2665">
+      <order-date>2019-07-08</order-date>
+      <exec-date>2019-07-09</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-319.81</amount>
+      <ending-balance curr="PLN">14192.21</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: 217. SF LAVARD Data wykonania: 2019-07-08 17:53:10 Numer referencyjny: 74838499189166770840675 Oryginalna kwota operacji: 319.81 PLN Numer karty: * 7861 Data waluty: 2019-07-08</description>
+    </operation>
+    <operation id="2666">
+      <order-date>2019-07-08</order-date>
+      <exec-date>2019-07-09</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-99.99</amount>
+      <ending-balance curr="PLN">14092.22</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: Outlet Data wykonania: 2019-07-08 17:58:12 Numer referencyjny: 74838499189166772337480 Oryginalna kwota operacji: 99.99 PLN Numer karty: * 7861 Data waluty: 2019-07-08</description>
+    </operation>
+    <operation id="2667">
+      <order-date>2019-07-08</order-date>
+      <exec-date>2019-07-10</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-17.41</amount>
+      <ending-balance curr="PLN">14074.81</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: BISTRO GREEN TOWERS Data wykonania: 2019-07-08 00:00:00 Numer referencyjny: 74230789189070183777458 Oryginalna kwota operacji: 17.41 PLN Numer karty: * 7861 Data waluty: 2019-07-08</description>
+    </operation>
+    <operation id="2668">
+      <order-date>2019-07-08</order-date>
+      <exec-date>2019-07-10</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-18.68</amount>
+      <ending-balance curr="PLN">14056.13</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: SIECHNICE Adres: DYSKONT PALIWOWY SIECHNIC Data wykonania: 2019-07-08 00:00:00 Numer referencyjny: 74169509189941892401688 Oryginalna kwota operacji: 18.68 PLN Numer karty: * 7861 Data waluty: 2019-07-08</description>
+    </operation>
+    <operation id="2669">
+      <order-date>2019-07-09</order-date>
+      <exec-date>2019-07-10</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-10.00</amount>
+      <ending-balance curr="PLN">14046.13</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: MCDONALDS 457 WROCLA 01 Data wykonania: 2019-07-09 19:37:08 Numer referencyjny: 74655569190167006843902 Oryginalna kwota operacji: 10.00 PLN Numer karty: * 7861 Data waluty: 2019-07-09</description>
+    </operation>
+    <operation id="2670">
+      <order-date>2019-07-09</order-date>
+      <exec-date>2019-07-10</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-69.99</amount>
+      <ending-balance curr="PLN">13976.14</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: KUBENZ 01 Data wykonania: 2019-07-09 18:21:34 Numer referencyjny: 74838499190166987078470 Oryginalna kwota operacji: 69.99 PLN Numer karty: * 7861 Data waluty: 2019-07-09</description>
+    </operation>
+    <operation id="2671">
+      <order-date>2019-07-10</order-date>
+      <exec-date>2019-07-10</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-128.90</amount>
+      <ending-balance curr="PLN">13847.24</ending-balance>
+      <description>Nr rach. przeciwst.: 85 1140 1010 0000 5325 5200 1003 Dane adr. rach. przeciwst.: EVENTIM SP. Z O.O. AL. JEROZOLIMSKIE 25;  00-508 WARSZAWA Tytuł: 1206949712 ZMIANA DANYCH MĘSKIE GRANIE Data waluty: 2019-07-10</description>
+      <other-side>
+        <owner>
+          <line>EVENTIM SP. Z O.O.</line>
+          <line>AL.</line>
+          <line>JEROZOLIMSKIE 25;  00-508 WARSZAWA</line>
+        </owner>
+        <account>85114010100000532552001003</account>
+      </other-side>
+    </operation>
+    <operation id="2672">
+      <order-date>2019-07-09</order-date>
+      <exec-date>2019-07-11</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-5.30</amount>
+      <ending-balance curr="PLN">13841.94</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: AVISTA-AUTOMAT NR. 1204 Data wykonania: 2019-07-09 00:00:00 Numer referencyjny: 74169509190941907965989 Oryginalna kwota operacji: 5.30 PLN Numer karty: * 7861 Data waluty: 2019-07-09</description>
+    </operation>
+    <operation id="2673">
+      <order-date>2019-07-09</order-date>
+      <exec-date>2019-07-11</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-50.00</amount>
+      <ending-balance curr="PLN">13791.94</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: BARBERONI DAWID CHOCHOLSK Data wykonania: 2019-07-09 00:00:00 Numer referencyjny: 74169509190931908989906 Oryginalna kwota operacji: 50.00 PLN Numer karty: * 7861 Data waluty: 2019-07-09</description>
+    </operation>
+    <operation id="2674">
+      <order-date>2019-07-10</order-date>
+      <exec-date>2019-07-11</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-13.50</amount>
+      <ending-balance curr="PLN">13778.44</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw (Krzy Adres: Poczta Polska 04 Data wykonania: 2019-07-10 20:17:28 Numer referencyjny: 74838499191167238313640 Oryginalna kwota operacji: 13.50 PLN Numer karty: * 7861 Data waluty: 2019-07-10</description>
+    </operation>
+    <operation id="2675">
+      <order-date>2019-07-14</order-date>
+      <exec-date>2019-07-16</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-45.00</amount>
+      <ending-balance curr="PLN">13733.44</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: BAR SAIGON Data wykonania: 2019-07-14 00:00:00 Numer referencyjny: 74169509195571950690112 Oryginalna kwota operacji: 45.00 PLN Numer karty: * 7861 Data waluty: 2019-07-14</description>
+    </operation>
+    <operation id="2676">
+      <order-date>2019-07-14</order-date>
+      <exec-date>2019-07-16</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-3.00</amount>
+      <ending-balance curr="PLN">13730.44</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: MPK7410 3WRO URBANCARD Data wykonania: 2019-07-14 00:00:00 Numer referencyjny: 74230789195070402459047 Oryginalna kwota operacji: 3.00 PLN Numer karty: * 7861 Data waluty: 2019-07-14</description>
+    </operation>
+    <operation id="2677">
+      <order-date>2019-07-15</order-date>
+      <exec-date>2019-07-16</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-202.90</amount>
+      <ending-balance curr="PLN">13527.54</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: Wroclaw Glowny Data wykonania: 2019-07-15 08:01:24 Numer referencyjny: 74838499196168106588847 Oryginalna kwota operacji: 202.90 PLN Numer karty: * 7861 Data waluty: 2019-07-15</description>
+    </operation>
+    <operation id="2678">
+      <order-date>2019-07-16</order-date>
+      <exec-date>2019-07-17</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-17.40</amount>
+      <ending-balance curr="PLN">13510.14</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: BAR BOROWIK Data wykonania: 2019-07-16 13:09:08 Numer referencyjny: 74655569197168387762318 Oryginalna kwota operacji: 17.40 PLN Numer karty: * 7861 Data waluty: 2019-07-16</description>
+    </operation>
+    <operation id="2679">
+      <order-date>2019-07-17</order-date>
+      <exec-date>2019-07-19</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-4.33</amount>
+      <ending-balance curr="PLN">13505.81</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: DR ZDROWIE A-25 Data wykonania: 2019-07-17 00:00:00 Numer referencyjny: 74230789199070516267175 Oryginalna kwota operacji: 4.33 PLN Numer karty: * 7861 Data waluty: 2019-07-17</description>
+    </operation>
+    <operation id="2680">
+      <order-date>2019-07-17</order-date>
+      <exec-date>2019-07-19</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-28.00</amount>
+      <ending-balance curr="PLN">13477.81</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: FORMA PLYNNA - BEACH B Data wykonania: 2019-07-17 00:00:00 Numer referencyjny: 74230789198070496456781 Oryginalna kwota operacji: 28.00 PLN Numer karty: * 7861 Data waluty: 2019-07-17</description>
+    </operation>
+    <operation id="2681">
+      <order-date>2019-07-19</order-date>
+      <exec-date>2019-07-19</exec-date>
+      <class>DEBIT</class>
+      <type>Opłata za kartę</type>
+      <amount curr="PLN">-0.99</amount>
+      <ending-balance curr="PLN">13476.82</ending-balance>
+      <description>Tytuł: OPŁATA MIESIĘCZNA ZA KARTĘ 416822******1344, 19.06-18.07 Data waluty: 2019-07-19</description>
+    </operation>
+    <operation id="2682">
+      <order-date>2019-07-19</order-date>
+      <exec-date>2019-07-19</exec-date>
+      <class>DEBIT</class>
+      <type>Opłata za kartę</type>
+      <amount curr="PLN">-0.99</amount>
+      <ending-balance curr="PLN">13475.83</ending-balance>
+      <description>Tytuł: OPŁATA MIESIĘCZNA ZA KARTĘ 416822******7861, 19.06-18.07 Data waluty: 2019-07-19</description>
+    </operation>
+    <operation id="2683">
+      <order-date>2019-07-18</order-date>
+      <exec-date>2019-07-19</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-13.50</amount>
+      <ending-balance curr="PLN">13462.33</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: BAR BOROWIK Data wykonania: 2019-07-18 12:57:00 Numer referencyjny: 74655569199168810070188 Oryginalna kwota operacji: 13.50 PLN Numer karty: * 7861 Data waluty: 2019-07-18</description>
+    </operation>
+    <operation id="2684">
+      <order-date>2019-07-18</order-date>
+      <exec-date>2019-07-19</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-6.19</amount>
+      <ending-balance curr="PLN">13456.14</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: SKLEP LIDL 1941 Data wykonania: 2019-07-18 08:31:18 Numer referencyjny: 74838499198168753569411 Oryginalna kwota operacji: 6.19 PLN Numer karty: * 7861 Data waluty: 2019-07-18</description>
+    </operation>
+    <operation id="2685">
+      <order-date>2019-07-20</order-date>
+      <exec-date>2019-07-20</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-28.00</amount>
+      <ending-balance curr="PLN">13428.14</ending-balance>
+      <description>Dane adr. rach. przeciwst.: DOTPAY SP. Z O.O. UL. WIELICKA 28B 30-552 KRAKÓW Tytuł: I M2100-67886 PRZEMYSŁAW CHROMICZ ZAMÓWIENIE NA BILETY NR 1543663 KINONH.PL Data waluty: 2019-07-20</description>
+      <other-side>
+        <owner>
+          <line>DOTPAY SP. Z O.O.</line>
+          <line>
+            
+          </line>
+          <line>UL. WIELICKA 28B</line>
+          <line>30-552 KRAKÓW</line>
+        </owner>
+      </other-side>
+    </operation>
+    <operation id="2686">
+      <order-date>2019-07-21</order-date>
+      <exec-date>2019-07-22</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-16.00</amount>
+      <ending-balance curr="PLN">13412.14</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: Osiem Misek Data wykonania: 2019-07-21 14:27:08 Numer referencyjny: 74838499201169484162513 Oryginalna kwota operacji: 16.00 PLN Numer karty: * 7861 Data waluty: 2019-07-21</description>
+    </operation>
+    <operation id="2687">
+      <order-date>2019-07-21</order-date>
+      <exec-date>2019-07-23</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-7.00</amount>
+      <ending-balance curr="PLN">13405.14</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: Aquapark Wroclaw Data wykonania: 2019-07-21 00:00:00 Numer referencyjny: 74036019202072111019400 Oryginalna kwota operacji: 7.00 PLN Numer karty: * 7861 Data waluty: 2019-07-21</description>
+    </operation>
+    <operation id="2688">
+      <order-date>2019-07-22</order-date>
+      <exec-date>2019-07-24</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-11.50</amount>
+      <ending-balance curr="PLN">13393.64</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: MAMINE SMAKI Data wykonania: 2019-07-22 00:00:00 Numer referencyjny: 74162439204065734162551 Oryginalna kwota operacji: 11.50 PLN Numer karty: * 7861 Data waluty: 2019-07-22</description>
+    </operation>
+    <operation id="2689">
+      <order-date>2019-07-23</order-date>
+      <exec-date>2019-07-25</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-14.76</amount>
+      <ending-balance curr="PLN">13378.88</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: WROCLAW Adres: BISTRO GREEN TOWERS Data wykonania: 2019-07-23 00:00:00 Numer referencyjny: 74230789204070683363958 Oryginalna kwota operacji: 14.76 PLN Numer karty: * 7861 Data waluty: 2019-07-23</description>
+    </operation>
+    <operation id="2690">
+      <order-date>2019-07-24</order-date>
+      <exec-date>2019-07-25</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-150.16</amount>
+      <ending-balance curr="PLN">13228.72</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: SIECHNICE Adres: ORLEN 01 Data wykonania: 2019-07-24 15:18:16 Numer referencyjny: 74838499205170070723672 Oryginalna kwota operacji: 150.16 PLN Numer karty: * 7861 Data waluty: 2019-07-24</description>
+    </operation>
+    <operation id="2691">
+      <order-date>2019-07-26</order-date>
+      <exec-date>2019-07-26</exec-date>
+      <class>CREDIT</class>
+      <type>Przelew na rachunek</type>
+      <amount curr="PLN">+3751.84</amount>
+      <ending-balance curr="PLN">16980.56</ending-balance>
+      <description>Nr rach. przeciwst.: 14 1030 1508 0000 0008 1766 9077 Dane adr. rach. przeciwst.: 3M SERVICE CENTER EMEA SP. Z O.O. UL.STANISLAWA DUBOIS, NR 41 50-207 WROCLAW Tytuł: WYNAGRODZENIE 3M Data waluty: 2019-07-26</description>
+      <other-side>
+        <owner>
+          <line>3M SERVICE CENTER EMEA SP. Z O.O.</line>
+          <line>UL.STANISLAWA DUBOIS, NR 41</line>
+          <line>50-207 WROCLAW</line>
+        </owner>
+        <account>14103015080000000817669077</account>
+      </other-side>
+    </operation>
+    <operation id="2692">
+      <order-date>2019-07-26</order-date>
+      <exec-date>2019-07-26</exec-date>
+      <class>CREDIT</class>
+      <type>Przelew na rachunek</type>
+      <amount curr="PLN">+30.00</amount>
+      <ending-balance curr="PLN">17010.56</ending-balance>
+      <description>Nr rach. przeciwst.: 80 1090 2428 0000 0001 1150 9131 Dane adr. rach. przeciwst.: PATRYCJA S ŁASZCZ UL. LILIOWA 1/24 55-220 JELCZ-LASKOWICE Tytuł: na białego rycerza Data waluty: 2019-07-26</description>
+      <other-side>
+        <owner>
+          <line>PATRYCJA S ŁASZCZ UL. LILIOWA 1/24</line>
+          <line>55-220 JELCZ-LASKOWICE</line>
+        </owner>
+        <account>80109024280000000111509131</account>
+      </other-side>
+    </operation>
+    <operation id="2693">
+      <order-date>2019-07-26</order-date>
+      <exec-date>2019-07-27</exec-date>
+      <class>DEBIT</class>
+      <type>Wypłata z bankomatu</type>
+      <amount curr="PLN">-100.00</amount>
+      <ending-balance curr="PLN">16910.56</ending-balance>
+      <description>Tytuł: PKO BP 10205242S1WR3030W2150C9716 Lokalizacja: Kraj: POLSKA Miasto: KOBIERZYCE Adres: UL. SPOLDZIELCZA 1 Data wykonania: 2019-07-26 18:19:42 Numer referencyjny: 10205242S1WR3030W2150C9716 Oryginalna kwota operacji: 100.00 PLN Numer karty: * 7861 Data waluty: 2019-07-26</description>
+    </operation>
+    <operation id="2694">
+      <order-date>2019-07-26</order-date>
+      <exec-date>2019-07-27</exec-date>
+      <class>DEBIT</class>
+      <type>Wypłata z bankomatu</type>
+      <amount curr="PLN">-150.00</amount>
+      <ending-balance curr="PLN">16760.56</ending-balance>
+      <description>Tytuł: PKO BP 10205242S1WR3030W2150C9717 Lokalizacja: Kraj: POLSKA Miasto: KOBIERZYCE Adres: UL. SPOLDZIELCZA 1 Data wykonania: 2019-07-26 18:21:03 Numer referencyjny: 10205242S1WR3030W2150C9717 Oryginalna kwota operacji: 150.00 PLN Numer karty: * 7861 Data waluty: 2019-07-26</description>
+    </operation>
+    <operation id="2695">
+      <order-date>2019-07-26</order-date>
+      <exec-date>2019-07-27</exec-date>
+      <class>DEBIT</class>
+      <type>Wypłata z bankomatu</type>
+      <amount curr="PLN">-150.00</amount>
+      <ending-balance curr="PLN">16610.56</ending-balance>
+      <description>Tytuł: PKO BP 10205242S1WR3030W2150C9718 Lokalizacja: Kraj: POLSKA Miasto: KOBIERZYCE Adres: UL. SPOLDZIELCZA 1 Data wykonania: 2019-07-26 18:21:50 Numer referencyjny: 10205242S1WR3030W2150C9718 Oryginalna kwota operacji: 150.00 PLN Numer karty: * 7861 Data waluty: 2019-07-26</description>
+    </operation>
+    <operation id="2696">
+      <order-date>2019-07-26</order-date>
+      <exec-date>2019-07-28</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-103.32</amount>
+      <ending-balance curr="PLN">16507.24</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: SIECHNICE Adres: LOTOS SP164 K.1 Data wykonania: 2019-07-26 00:00:00 Numer referencyjny: 74230789208070812916326 Oryginalna kwota operacji: 103.32 PLN Numer karty: * 7861 Data waluty: 2019-07-26</description>
+    </operation>
+    <operation id="2697">
+      <order-date>2019-07-27</order-date>
+      <exec-date>2019-07-29</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-30.42</amount>
+      <ending-balance curr="PLN">16476.82</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: KRUSZWICA Adres: MILA 4150 Data wykonania: 2019-07-27 00:00:00 Numer referencyjny: 74378839208026460134856 Oryginalna kwota operacji: 30.42 PLN Numer karty: * 7861 Data waluty: 2019-07-27</description>
+    </operation>
+    <operation id="2698">
+      <order-date>2019-07-27</order-date>
+      <exec-date>2019-07-29</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-42.50</amount>
+      <ending-balance curr="PLN">16434.32</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Kruszwica Adres: PIZZERIA AL CAPONE Data wykonania: 2019-07-27 00:00:00 Numer referencyjny: 74162439209066188952229 Oryginalna kwota operacji: 42.50 PLN Numer karty: * 7861 Data waluty: 2019-07-27</description>
+    </operation>
+    <operation id="2699">
+      <order-date>2019-07-28</order-date>
+      <exec-date>2019-07-30</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-12.06</amount>
+      <ending-balance curr="PLN">16422.26</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: GNIEZNO Adres: CARREFOUR Data wykonania: 2019-07-28 00:00:00 Numer referencyjny: 74169509209572094369781 Oryginalna kwota operacji: 12.06 PLN Numer karty: * 7861 Data waluty: 2019-07-28</description>
+    </operation>
+    <operation id="2700">
+      <order-date>2019-07-30</order-date>
+      <exec-date>2019-07-30</exec-date>
+      <class>CREDIT</class>
+      <type>Przelew na rachunek</type>
+      <amount curr="PLN">+660.00</amount>
+      <ending-balance curr="PLN">17082.26</ending-balance>
+      <description>Nr rach. przeciwst.: 27 1020 3668 0000 5502 0098 6505 Dane adr. rach. przeciwst.: ALEKSANDER  CHROMICZ UL. KASZTANOWA 9 55-010 GROBLICE Tytuł: WPŁATA WŁASNA - LEKI Data waluty: 2019-07-30</description>
+      <other-side>
+        <owner>
+          <line>ALEKSANDER  CHROMICZ</line>
+          <line>
+            
+          </line>
+          <line>UL. KASZTANOWA 9</line>
+          <line>55-010 GROBLICE</line>
+        </owner>
+        <account>27102036680000550200986505</account>
+      </other-side>
+    </operation>
+    <operation id="2701">
+      <order-date>2019-07-30</order-date>
+      <exec-date>2019-07-30</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-100.00</amount>
+      <ending-balance curr="PLN">16982.26</ending-balance>
+      <description>Nr rach. przeciwst.: 91 2490 0005 0000 4530 2199 8820 Dane adr. rach. przeciwst.: FUNDACJA DAJ HERBATĘ Tytuł: ZBUDUJMY CENTRALNY PUNKT INTEGRACJI DLA OSÓB W KRYZYSIE BEZDOMNOŚCI Data waluty: 2019-07-30</description>
+      <other-side>
+        <owner>
+          <line>FUNDACJA DAJ HERBATĘ</line>
+        </owner>
+        <account>91249000050000453021998820</account>
+      </other-side>
+    </operation>
+    <operation id="2702">
+      <order-date>2019-07-30</order-date>
+      <exec-date>2019-07-30</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-67.00</amount>
+      <ending-balance curr="PLN">16915.26</ending-balance>
+      <description>Nr rach. przeciwst.: 50 1020 5558 1111 1900 1730 0049 Dane adr. rach. przeciwst.: JANEK SOKOŁOWSKI Tytuł: LAS KRUSZVICAS - OSTATNIE TAKIE TANGO Data waluty: 2019-07-30</description>
+      <other-side>
+        <owner>
+          <line>JANEK SOKOŁOWSKI</line>
+        </owner>
+        <account>50102055581111190017300049</account>
+      </other-side>
+    </operation>
+    <operation id="2703">
+      <order-date>2019-07-30</order-date>
+      <exec-date>2019-07-30</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-38.00</amount>
+      <ending-balance curr="PLN">16877.26</ending-balance>
+      <description>Nr rach. przeciwst.: 51 1050 1201 1000 0091 3869 6886 Dane adr. rach. przeciwst.: MAREK SOŚNICKI Tytuł: LAS KRUSZVICAS - OSTATNIE TAKIE TANGO Data waluty: 2019-07-30</description>
+      <other-side>
+        <owner>
+          <line>MAREK SOŚNICKI</line>
+        </owner>
+        <account>51105012011000009138696886</account>
+      </other-side>
+    </operation>
+    <operation id="2704">
+      <order-date>2019-07-31</order-date>
+      <exec-date>2019-08-01</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-56.16</amount>
+      <ending-balance curr="PLN">16821.10</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: SHELL 04 Data wykonania: 2019-07-31 16:51:23 Numer referencyjny: 74838499211171580097195 Oryginalna kwota operacji: 56.16 PLN Numer karty: * 7861 Data waluty: 2019-07-31</description>
+    </operation>
+    <operation id="2705">
+      <order-date>2019-08-01</order-date>
+      <exec-date>2019-08-01</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-220.00</amount>
+      <ending-balance curr="PLN">16601.10</ending-balance>
+      <description>Nr rach. przeciwst.: 19 1160 2202 0000 0002 6184 4590 Dane adr. rach. przeciwst.: KARNAŚ AGNIESZKA UL KS. STASZICA 15M14 47-400 RACIBÓRZ Tytuł: ZWROT BILET MĘSKIE GRANIE + LEKI Data waluty: 2019-08-01</description>
+      <other-side>
+        <owner>
+          <line>KARNAŚ AGNIESZKA</line>
+          <line>UL KS. STASZICA 15M14</line>
+          <line>47-400 RACIBÓRZ</line>
+        </owner>
+        <account>19116022020000000261844590</account>
+      </other-side>
+    </operation>
+    <operation id="2706">
+      <order-date>2019-08-01</order-date>
+      <exec-date>2019-08-01</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-420.00</amount>
+      <ending-balance curr="PLN">16181.10</ending-balance>
+      <description>Nr rach. przeciwst.: 50 1020 5558 1111 1397 9000 0097 Dane adr. rach. przeciwst.: ALICJA ALEKSANDRA CHROMICZ UL. KASZTANOWA 9 55-010 GROBLICE Tytuł: ZWROT BILETY MATEO I ALA MĘSKIE GRANIE + PREZENTY MAMA I TATA Data waluty: 2019-08-01</description>
+      <other-side>
+        <owner>
+          <line>ALICJA ALEKSANDRA CHROMICZ</line>
+          <line>UL. KASZTANOWA 9</line>
+          <line>55-010 GROBLICE</line>
+        </owner>
+        <account>50102055581111139790000097</account>
+      </other-side>
+    </operation>
+    <operation id="2707">
+      <order-date>2019-08-01</order-date>
+      <exec-date>2019-08-01</exec-date>
+      <class>DEBIT</class>
+      <type>Przelew z rachunku</type>
+      <amount curr="PLN">-2500.00</amount>
+      <ending-balance curr="PLN">13681.10</ending-balance>
+      <description>Nr rach. przeciwst.: 86 1240 6827 1111 0000 5639 6407 Dane adr. rach. przeciwst.: WROCŁAWSKA WYŻSZA SZKOŁA INFORMATYKI STOSOWANEJ UL. SŁUBICKA 29-33 53-615 WROCŁAW Tytuł: OPŁATA ZA SEMESTR II STUDIA PODYPLOMOWE JWD Data waluty: 2019-08-01</description>
+      <other-side>
+        <owner>
+          <line>WROCŁAWSKA WYŻSZA SZKOŁA</line>
+          <line>INFORMATYKI STOSOWANEJ UL. SŁUBICKA</line>
+          <line>29-33 53-615 WROCŁAW</line>
+        </owner>
+        <account>86124068271111000056396407</account>
+      </other-side>
+    </operation>
+    <operation id="2708">
+      <order-date>2019-08-01</order-date>
+      <exec-date>2019-08-02</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-39.26</amount>
+      <ending-balance curr="PLN">13641.84</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: Super - Pharm Wroclaw S Data wykonania: 2019-08-01 20:01:20 Numer referencyjny: 74838499213171857827454 Oryginalna kwota operacji: 39.26 PLN Numer karty: * 7861 Data waluty: 2019-08-01</description>
+    </operation>
+    <operation id="2709">
+      <order-date>2019-08-03</order-date>
+      <exec-date>2019-08-04</exec-date>
+      <class>DEBIT</class>
+      <type>Płatność kartą</type>
+      <amount curr="PLN">-110.00</amount>
+      <ending-balance curr="PLN">13531.84</ending-balance>
+      <description>Lokalizacja: Kraj: POLSKA Miasto: Wroclaw Adres: Centrum Medyczne - Omni Data wykonania: 2019-08-03 08:25:10 Numer referencyjny: 74838499215172147453471 Oryginalna kwota operacji: 110.00 PLN Numer karty: * 7861 Data waluty: 2019-08-03</description>
+    </operation>
+  </operations>
+</account-history>
