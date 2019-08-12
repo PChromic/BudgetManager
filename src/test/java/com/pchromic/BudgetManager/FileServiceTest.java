@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 @SpringBootTest
 public class FileServiceTest {
 
-    private final String FILE_PATH = "E:\\Projects\\BudgetManager\\assets\\Historia_Rachunku.xls";
+    private final String FILE_PATH = "D:\\Projects\\BudgetManager\\assets\\Historia_Rachunku.xls";
 
     @Autowired
     private OperationService operationService;

@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.pchromic.BudgetManager.JPAQuerydslIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! - in com.pchromic.BudgetManager.JPAQuerydslIntegrationTest
+givenLast_whenGettingListOfUsers_thenCorrect(com.pchromic.BudgetManager.JPAQuerydslIntegrationTest)  Time elapsed: 0.023 s  <<< ERROR!
+java.lang.NoClassDefFoundError: com/pchromic/BudgetManager/domain/operation/OperationPredicateBuilder
+	at com.pchromic.BudgetManager.JPAQuerydslIntegrationTest.givenLast_whenGettingListOfUsers_thenCorrect(JPAQuerydslIntegrationTest.java:59)
+Caused by: java.lang.ClassNotFoundException: com.pchromic.BudgetManager.domain.operation.OperationPredicateBuilder
+	at com.pchromic.BudgetManager.JPAQuerydslIntegrationTest.givenLast_whenGettingListOfUsers_thenCorrect(JPAQuerydslIntegrationTest.java:59)
+

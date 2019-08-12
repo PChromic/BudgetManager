@@ -1,14 +1,11 @@
 package com.pchromic.BudgetManager.service.impl;
 
-import com.pchromic.BudgetManager.domain.Operation;
-import com.pchromic.BudgetManager.repository.OperationRepository;
+import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.service.FileService;
 import com.pchromic.BudgetManager.service.OperationService;
-import com.pchromic.BudgetManager.utility.ExcelUtilities;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.tomcat.util.modeler.OperationInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

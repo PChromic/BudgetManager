@@ -1,4 +1,4 @@
-package com.pchromic.BudgetManager.domain;
+package com.pchromic.BudgetManager.domain.operation;
 
 import com.pchromic.BudgetManager.enums.OperationClass;
 import com.pchromic.BudgetManager.enums.TransactionType;
@@ -20,15 +20,16 @@ public class Operation {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "operationDate", nullable = false)
+    @Column(name = "operation_date", nullable = false)
     LocalDate operationDate;
     // LocalDate orderDate;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "operationClass", nullable = false)
+    @Column(name = "operation_class", nullable = false)
     OperationClass operationClass;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "transaction_type")
     TransactionType transType;
 
     @Column(name = "amount", nullable = false)
@@ -37,7 +38,7 @@ public class Operation {
     @Column(name = "currency", nullable = false)
     Currency currency;
 
-    @Column(name = "endingBalance", nullable = false)
+    @Column(name = "balance", nullable = false)
     BigDecimal endingBalance;
 
     @Column(name = "description", nullable = false)

@@ -1,16 +1,14 @@
 package com.pchromic.BudgetManager.service.impl;
 
-import com.pchromic.BudgetManager.domain.Operation;
+import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.enums.OperationClass;
 import com.pchromic.BudgetManager.enums.TransactionType;
 import com.pchromic.BudgetManager.repository.OperationRepository;
 import com.pchromic.BudgetManager.service.OperationService;
 import org.apache.poi.ss.usermodel.Row;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.rmi.NoSuchObjectException;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.*;
@@ -55,9 +53,9 @@ public class OperationServiceImpl implements OperationService {
         return operationOptional.orElseThrow(IllegalArgumentException::new);
     }
 
-    public List<Operation> getOperationsWithinDates(Date startDate, Date endDate){
+ /*   public List<Operation> getOperationsWithinDates(Date startDate, Date endDate){
 
-    }
+    }*/
 
 
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FILES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

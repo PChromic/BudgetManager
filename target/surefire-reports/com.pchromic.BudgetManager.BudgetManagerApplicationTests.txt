@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.pchromic.BudgetManager.BudgetManagerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.189 s <<< FAILURE! - in com.pchromic.BudgetManager.BudgetManagerApplicationTests
+initializationError(com.pchromic.BudgetManager.BudgetManagerApplicationTests)  Time elapsed: 0.008 s  <<< ERROR!
+java.lang.Exception: No runnable methods
+
