@@ -40,7 +40,7 @@ public class OperationRepositoryTest {
         Operation operation1 = new Operation();
         operation1.setAmount(new BigDecimal(1000));
         operation1.setTransType(TransactionType.ACC_TRANSFER);
-        operation1.setOperationDate(LocalDate.now());
+        operation1.setOperationDate(LocalDate.of(2019,7,4));
         operation1.setOperationClass(OperationClass.DEBIT);
         operation1.setEndingBalance(BigDecimal.ONE);
         operation1.setDescription("123");
@@ -55,7 +55,7 @@ public class OperationRepositoryTest {
         List<Operation> byHighestIncome = repository.findByHighestIncome();
 
         Assert.assertEquals(byHighestIncome.size(),1);
-        Assert.assertEquals(100,byHighestIncome.get(0).getAmount());
+        Assert.assertEquals(new BigDecimal("1000.00"),byHighestIncome.get(0).getAmount());
     }
     @Test
     public void shouldGetOperationWithHighestExpense(){
@@ -64,5 +64,14 @@ public class OperationRepositoryTest {
 
         Assert.assertEquals(byHighestExpense.size(),1);
         Assert.assertEquals(1000,byHighestExpense.get(0).getAmount());
+    }
+
+    @Test
+    public void shouldGetOperationsAfterDate(){
+
+        List<Operation> byHighestExpense = repository.findByOperationDateAfter(LocalDate.of(2019,8,4));
+
+        Assert.assertEquals(2019-07-04,byHighestExpense);
+
     }
 }

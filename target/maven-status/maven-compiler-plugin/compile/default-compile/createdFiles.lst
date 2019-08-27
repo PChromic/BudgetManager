@@ -1,4 +1,5 @@
 com\pchromic\BudgetManager\repository\OperationRepository.class
+com\pchromic\BudgetManager\controller\OperationController.class
 com\pchromic\BudgetManager\enums\TransactionType.class
 com\pchromic\BudgetManager\service\FileService.class
 com\pchromic\BudgetManager\service\impl\OperationServiceImpl.class
@@ -11,6 +12,7 @@ com\pchromic\BudgetManager\service\impl\FileServiceImpl.class
 com\pchromic\BudgetManager\SearchCriteria.class
 com\pchromic\BudgetManager\utility\ExcelUtilities$1.class
 com\pchromic\BudgetManager\utility\ExcelUtilities.class
+com\pchromic\BudgetManager\controller\FileController.class
 com\pchromic\BudgetManager\enums\ColumnName.class
 com\pchromic\BudgetManager\repository\impl\OperationRepositoryImpl.class
 com\pchromic\BudgetManager\domain\operation\Operation.class

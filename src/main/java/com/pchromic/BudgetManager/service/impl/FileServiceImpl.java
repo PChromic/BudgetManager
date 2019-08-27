@@ -6,7 +6,6 @@ import com.pchromic.BudgetManager.service.OperationService;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
@@ -17,8 +16,12 @@ import java.util.Iterator;
 @Service
 public class FileServiceImpl implements FileService {
 
-    @Autowired
-    private OperationService operationService;
+    private final OperationService operationService;
+
+
+    public FileServiceImpl(OperationService operationService) {
+        this.operationService = operationService;
+    }
 
     private HSSFWorkbook workbook;
 
@@ -34,6 +37,7 @@ public class FileServiceImpl implements FileService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("Reading file ended");
     }
 
     public void readFile() {
@@ -60,9 +64,10 @@ public class FileServiceImpl implements FileService {
 
     }
 
-
     private void saveRow(Row row) {
         Operation operation = operationService.getOperationFromRow(row);
         operationService.addOperation(operation);
     }
+
+
 }

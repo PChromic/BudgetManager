@@ -1,15 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.pchromic.BudgetManager.OperationRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! - in com.pchromic.BudgetManager.OperationRepositoryTest
-saveOrders(com.pchromic.BudgetManager.OperationRepositoryTest)  Time elapsed: 0.005 s  <<< ERROR!
-org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
-	at com.pchromic.BudgetManager.OperationRepositoryTest.saveOrders(OperationRepositoryTest.java:24)
-Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
-	at com.pchromic.BudgetManager.OperationRepositoryTest.saveOrders(OperationRepositoryTest.java:24)
-Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
-Pole nie może być NULL"AMOUNT"
-NULL not allowed for column "AMOUNT"; SQL statement:
-insert into operation (id, amount, currency, description, ending_balance, operation_class, operation_date, trans_type) values (null, ?, ?, ?, ?, ?, ?, ?) [23502-199]
-	at com.pchromic.BudgetManager.OperationRepositoryTest.saveOrders(OperationRepositoryTest.java:24)
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.206 s <<< FAILURE! - in com.pchromic.BudgetManager.OperationRepositoryTest
+shouldGetOperationWithHighestExpense(com.pchromic.BudgetManager.OperationRepositoryTest)  Time elapsed: 1.075 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1000> but was:<1000.00>
+	at com.pchromic.BudgetManager.OperationRepositoryTest.shouldGetOperationWithHighestExpense(OperationRepositoryTest.java:66)
+
+shouldGetOperationWithHighestIncome(com.pchromic.BudgetManager.OperationRepositoryTest)  Time elapsed: 0.128 s  <<< FAILURE!
+java.lang.AssertionError: expected:<0> but was:<1>
+	at com.pchromic.BudgetManager.OperationRepositoryTest.shouldGetOperationWithHighestIncome(OperationRepositoryTest.java:57)
 

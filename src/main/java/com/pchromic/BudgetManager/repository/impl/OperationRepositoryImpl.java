@@ -2,19 +2,20 @@ package com.pchromic.BudgetManager.repository.impl;
 
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.operation.OperationSearchCriteria;
-import com.pchromic.BudgetManager.domain.operation.QOperation;
+import com.pchromic.BudgetManager.domain.QOperation;
 import com.pchromic.BudgetManager.enums.OperationClass;
-import com.pchromic.BudgetManager.repository.OperationRepository;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.criteria.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Repository
 public class OperationRepositoryImpl  {
 
     @PersistenceContext
@@ -99,4 +100,18 @@ public class OperationRepositoryImpl  {
                 .limit(1)
                 .fetch();
     }
+
+
+
+    public List<Operation> findByOperationDateBetween(LocalDate from, LocalDate to) {
+        QOperation operation = QOperation.operation;
+
+        JPAQueryFactory queryFactory = new JPAQueryFactory(entityManager);
+        JPAQuery<Operation> query = queryFactory.selectFrom(operation);
+        return queryFactory.selectFrom(operation)
+                .where(operation.operationDate.between(from, to))
+                .orderBy(operation.operationDate.desc())
+                .fetch();
+    }
+
 }

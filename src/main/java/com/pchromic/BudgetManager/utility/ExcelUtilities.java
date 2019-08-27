@@ -13,7 +13,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Iterator;
 
-@Component
+
 public class ExcelUtilities implements FileUtilities {
 
     @Autowired

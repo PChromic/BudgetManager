@@ -23,8 +23,9 @@ public class OperationServiceImpl implements OperationService {
     }
 
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ REPOSITORY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    List<Operation> operations = new ArrayList<>();
 
+
+    @Override
     public void addOperations(List<Operation> operations) {
         for (Operation o :
                 operations) {
@@ -32,38 +33,63 @@ public class OperationServiceImpl implements OperationService {
         }
     }
 
+    @Override
     public Operation addOperation(Operation operation) {
         return operationRepository.save(operation);
     }
 
+    @Override
     public void removeOperation(Long id) {
         operationRepository.deleteById(id);
     }
 
+    @Override
     public Operation updateOperation(Operation operation) {
         return operationRepository.save(operation);
     }
 
+    @Override
     public List<Operation> getAllOperations() {
         return operationRepository.findAll();
     }
 
+    @Override
     public Operation findOperation(Long id) {
         Optional<Operation> operationOptional = operationRepository.findById(id);
         return operationOptional.orElseThrow(IllegalArgumentException::new);
     }
 
- /*   public List<Operation> getOperationsWithinDates(Date startDate, Date endDate){
+    @Override
+    public List<Operation> getByHighestIncome() {
+        return operationRepository.findByHighestIncome();
 
-    }*/
+    }
 
+    @Override
+    public List<Operation> getByHighestExpense() {
+        return operationRepository.findByHighestExpense();
+    }
+
+    @Override
+    public List<Operation> getByDateBetween(LocalDate from, LocalDate to) {
+        return operationRepository.findByOperationDateBetween(from, to);
+    }
+
+    @Override
+    public List<Operation> getByDateAfter(LocalDate after) {
+        return operationRepository.findByOperationDateAfter(after);
+    }
 
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FILES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
     public Operation getOperationFromRow(Row row) {
+        Long id;
         String stringValue;
         BigDecimal money;
         Operation operation = new Operation();
+
+        id = Long.valueOf(row.getCell(0).getStringCellValue());
+        operation.setId(id);
 
         LocalDate operationDate = convertToLocalDateViaInstant(row.getCell(1).getDateCellValue());
         operation.setOperationDate(operationDate);
@@ -71,7 +97,7 @@ public class OperationServiceImpl implements OperationService {
         stringValue = row.getCell(3).getStringCellValue();
         operation.setTransType(getTransactionType(stringValue));
 
-        money = BigDecimal.valueOf(row.getCell(4).getNumericCellValue());
+        money = BigDecimal.valueOf(row.getCell(4).getNumericCellValue()).abs();
         operation.setAmount(money);
 
         Currency cur = Currency.getInstance(row.getCell(5).getStringCellValue());
@@ -117,7 +143,7 @@ public class OperationServiceImpl implements OperationService {
     }
 
     private OperationClass setOperationClass(BigDecimal money) {
-        return money.intValue() > 0 ? OperationClass.CREDIT : OperationClass.DEBIT;
+        return money.signum() > 0 ? OperationClass.CREDIT : OperationClass.DEBIT;
     }
 
     private LocalDate parseStringToLocalDate(String date) {

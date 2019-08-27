@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.pchromic.BudgetManager.FileServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.556 s - in com.pchromic.BudgetManager.FileServiceTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.833 s <<< FAILURE! - in com.pchromic.BudgetManager.FileServiceTest
+readFile(com.pchromic.BudgetManager.FileServiceTest)  Time elapsed: 0.072 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.pchromic.BudgetManager.FileServiceTest.readFile(FileServiceTest.java:42)
+
