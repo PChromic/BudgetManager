@@ -2,11 +2,8 @@ package com.pchromic.BudgetManager.domain.report;
 
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.user.User;
-import com.pchromic.BudgetManager.enums.ExpenseType;
 import com.pchromic.BudgetManager.enums.ReportType;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,6 +12,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "REPORT")
+@Data
 public class Report implements Serializable {
 
     @Id
@@ -38,32 +36,4 @@ public class Report implements Serializable {
     )
     private Set<Operation> operations = new HashSet<>();
 
-    public Report(Long id, ReportType reportType) {
-        this.id = id;
-        this.reportType = reportType;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public ReportType getReportType() {
-        return reportType;
-    }
-
-    public void setReportType(ReportType reportType) {
-        this.reportType = reportType;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-}
+ }

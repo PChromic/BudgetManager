@@ -4,9 +4,7 @@ import com.pchromic.BudgetManager.domain.expense.Expense;
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.report.Report;
 import com.pchromic.BudgetManager.enums.UserType;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,6 +13,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "USER")
+@Data
+@Builder
 public class User implements Serializable {
 
     @Id
@@ -80,49 +80,4 @@ public class User implements Serializable {
         expenses.remove(expense);
         expense.setUser(null);
     }
-
-
-
-    public User() {
-    }
-
-    public User(Long id, String userName, String password) {
-        this.id = id;
-        this.userName = userName;
-        this.password = password;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public UserType getUserType() {
-        return userType;
-    }
-
-    public void setUserType(UserType userType) {
-        this.userType = userType;
-    }
-
-
 }

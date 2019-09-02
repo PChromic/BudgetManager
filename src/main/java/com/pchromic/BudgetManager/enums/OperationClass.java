@@ -2,6 +2,7 @@ package com.pchromic.BudgetManager.enums;
 
 import java.util.Arrays;
 
+
 public enum OperationClass {
     CREDIT("CREDIT"),
     DEBIT("DEBIT");

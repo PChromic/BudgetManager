@@ -18,29 +18,29 @@ public class OperationController {
 
     @PostMapping("/operations")
     void add(@RequestBody Operation operation) {
-        service.addOperation(operation);
+        service.add(operation);
     }
 
     @DeleteMapping("/operations/{id}")
     void remove(@RequestParam String id) {
-        service.removeOperation(Long.valueOf(id));
+        service.remove(Long.valueOf(id));
     }
 
     @PutMapping("/operations/{id}")
     void update(@RequestBody Operation operation, @RequestParam Long id) {
-        service.updateOperation(operation);
+        service.update(operation);
     }
 
 
     @GetMapping(value = "/operations/{id}")
     Operation one(@PathVariable  String id) {
-        return service.findOperation(Long.valueOf(id));
+        return service.findOne(Long.valueOf(id));
     }
 
 
     @GetMapping("/operations")
     List<Operation> all() {
-        return service.getAllOperations();
+        return service.getAll();
     }
 
     @GetMapping("/operations/income")

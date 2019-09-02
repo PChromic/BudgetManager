@@ -1,7 +1,5 @@
 package com.pchromic.BudgetManager.enums;
 
-import java.util.Arrays;
-
 public enum TransactionType {
     CARD_PAYMENT("Płatność kartą"),
     TRANSFER("Przelew"),

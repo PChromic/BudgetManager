@@ -1,12 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: com.pchromic.BudgetManager.OperationRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 1.206 s <<< FAILURE! - in com.pchromic.BudgetManager.OperationRepositoryTest
-shouldGetOperationWithHighestExpense(com.pchromic.BudgetManager.OperationRepositoryTest)  Time elapsed: 1.075 s  <<< FAILURE!
-java.lang.AssertionError: expected:<1000> but was:<1000.00>
-	at com.pchromic.BudgetManager.OperationRepositoryTest.shouldGetOperationWithHighestExpense(OperationRepositoryTest.java:66)
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.044 s <<< FAILURE! - in com.pchromic.BudgetManager.OperationRepositoryTest
+shouldGetOperationWithHighestExpense(com.pchromic.BudgetManager.OperationRepositoryTest)  Time elapsed: 0.035 s  <<< ERROR!
+org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation
+	at com.pchromic.BudgetManager.OperationRepositoryTest.setData(OperationRepositoryTest.java:38)
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation
+	at com.pchromic.BudgetManager.OperationRepositoryTest.setData(OperationRepositoryTest.java:38)
 
-shouldGetOperationWithHighestIncome(com.pchromic.BudgetManager.OperationRepositoryTest)  Time elapsed: 0.128 s  <<< FAILURE!
-java.lang.AssertionError: expected:<0> but was:<1>
-	at com.pchromic.BudgetManager.OperationRepositoryTest.shouldGetOperationWithHighestIncome(OperationRepositoryTest.java:57)
+shouldGetOperationsAfterDate(com.pchromic.BudgetManager.OperationRepositoryTest)  Time elapsed: 0.003 s  <<< ERROR!
+org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation
+	at com.pchromic.BudgetManager.OperationRepositoryTest.setData(OperationRepositoryTest.java:38)
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation
+	at com.pchromic.BudgetManager.OperationRepositoryTest.setData(OperationRepositoryTest.java:38)
+
+shouldGetOperationWithHighestIncome(com.pchromic.BudgetManager.OperationRepositoryTest)  Time elapsed: 0.003 s  <<< ERROR!
+org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation
+	at com.pchromic.BudgetManager.OperationRepositoryTest.setData(OperationRepositoryTest.java:38)
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.pchromic.BudgetManager.domain.operation.Operation
+	at com.pchromic.BudgetManager.OperationRepositoryTest.setData(OperationRepositoryTest.java:38)
 

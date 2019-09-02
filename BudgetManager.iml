@@ -80,7 +80,7 @@
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.18" level="project" />
     <orderEntry type="library" name="Maven: com.github.virtuald:curvesapi:1.05" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.16" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: com.h2database:h2:1.4.199" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.h2database:h2:1.4.199" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.jayway.jsonpath:json-path:2.4.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:json-smart:2.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.minidev:accessors-smart:1.2" level="project" />
@@ -101,7 +101,7 @@
     <orderEntry type="library" name="Maven: com.infradna.tool:bridge-method-annotation:1.13" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:2.1.6.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:2.1.6.RELEASE" level="project" />
