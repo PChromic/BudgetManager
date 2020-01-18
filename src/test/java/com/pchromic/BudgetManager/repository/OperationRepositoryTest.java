@@ -1,5 +1,5 @@
 
-package com.pchromic.BudgetManager;
+package com.pchromic.BudgetManager.repository;
 
 
 import com.pchromic.BudgetManager.domain.operation.Operation;
@@ -26,7 +26,6 @@ import static org.hamcrest.Matchers.containsInAnyOrder;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@Rollback
 public class OperationRepositoryTest {
 
     @Autowired

@@ -1,7 +1,6 @@
 package com.pchromic.BudgetManager.controller;
 
 import com.pchromic.BudgetManager.domain.expense.Expense;
-import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.service.ExpenseService;
 import org.springframework.web.bind.annotation.*;
 

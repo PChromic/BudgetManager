@@ -1,9 +1,16 @@
 package com.pchromic.BudgetManager.repository;
 
+import com.pchromic.BudgetManager.domain.expense.Expense;
+import com.pchromic.BudgetManager.domain.expense.QExpense;
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.operation.QOperation;
+import com.pchromic.BudgetManager.enums.ExpenseType;
 import com.pchromic.BudgetManager.enums.OperationClass;
 import com.pchromic.BudgetManager.enums.TransactionType;
+import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.OrderSpecifier;
+import com.querydsl.core.types.Predicate;
+import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.core.types.dsl.StringExpression;
 import com.querydsl.core.types.dsl.StringPath;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -19,20 +26,31 @@ import java.util.List;
 
 @Repository
 public interface OperationRepository extends JpaRepository<Operation, Long>,
-        QuerydslPredicateExecutor<Operation>, QuerydslBinderCustomizer<QOperation>, CustomizedOperationRepository {
-
+        QuerydslPredicateExecutor<Operation> {
 
     @Override
-    default void customize(QuerydslBindings bindings, QOperation root) {
-        bindings.bind(String.class)
-                .first((SingleValueBinding<StringPath, String>) StringExpression::containsIgnoreCase);
+    List<Operation> findAll(Predicate predicate);
+
+    @Override
+    List<Operation> findAll(Predicate predicate, OrderSpecifier<?>... orders);
+
+    default List<Operation> findByHighestIncome() {
+        QOperation operation = QOperation.operation;
+        BooleanExpression predicate = operation.operationClass.eq(OperationClass.CREDIT);
+        return findAll(predicate);
     }
+
+    default List<Operation> findByHighestExpense() {
+        QOperation operation = QOperation.operation;
+        BooleanExpression predicate = operation.operationClass.eq(OperationClass.DEBIT);
+        return findAll(predicate);
+    }
+
+    List<Operation> findByOperationDateBefore(LocalDate before);
 
     List<Operation> findByOperationDateBetween(LocalDate from, LocalDate to);
 
     List<Operation> findByOperationDateAfter(LocalDate after);
-
-    List<Operation> findByOperationDateBefore(LocalDate before);
 
     List<Operation> findByOperationClass(OperationClass operationClass);
 
@@ -43,6 +61,7 @@ public interface OperationRepository extends JpaRepository<Operation, Long>,
     List<Operation> findByOperationClassAndAmountLessThanEqual(OperationClass operationClass, BigDecimal amount);
 
     List<Operation> findByDescriptionContaining(String description);
+
 
 
 }

@@ -25,6 +25,4 @@ public enum TransactionType {
                 .findFirst()
                 .orElseThrow(() -> new RuntimeException("Not found"));*/
     }
-
-
 }

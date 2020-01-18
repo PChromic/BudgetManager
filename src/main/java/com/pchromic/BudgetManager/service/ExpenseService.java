@@ -41,11 +41,11 @@ public class ExpenseService {
     }
 
 
-    public List<Expense> findByValueBetween(int from, int to){
-        return repository.findByValueBetween(from,to);
+    public List<Expense> findByValueBetween(int from, int to) {
+        return repository.findByValueBetween(from, to);
     }
 
-    public List<Expense> findByValueGreaterThanEqual(int from){
+    public List<Expense> findByValueGreaterThanEqual(int from) {
         return repository.findByValueGreaterThanEqual(from);
     }
 
@@ -53,27 +53,35 @@ public class ExpenseService {
         return repository.findByValueLessThanEqual(to);
     }
 
-    public List<Expense> findByExpenseType(ExpenseType type){
+    public List<Expense> findByExpenseType(ExpenseType type) {
         return repository.findByExpenseType(type);
     }
 
-    public List<Expense> findByPaymentDate(LocalDate date){
+    public List<Expense> findByPaymentDate(LocalDate date) {
         return repository.findByPaymentDate(date);
     }
 
-    public List<Expense> findByPaymentDateBetween(LocalDate from, LocalDate to){
-        return repository.findByPaymentDateBetween(from,to);
+    public List<Expense> findByPaymentDateBetween(LocalDate from, LocalDate to) {
+        return repository.findByPaymentDateBetween(from, to);
     }
 
-    public List<Expense> findByPaymentDateAfter(LocalDate from){
+    public List<Expense> findByPaymentDateAfter(LocalDate from) {
         return repository.findByPaymentDateAfter(from);
     }
 
-    public List<Expense> findByPaymentDateBefore(LocalDate to){
+    public List<Expense> findByPaymentDateBefore(LocalDate to) {
         return repository.findByPaymentDateBefore(to);
     }
-    public List<Expense> findByDescriptionContaining(String description){
+
+    public List<Expense> findByDescriptionContaining(String description) {
         return repository.findByDescriptionContaining(description);
     }
 
+    public List<Expense> findByIncomingPaymentDate( ) {
+        return repository.findByIncomingPaymentDate();
+    }
+
+    public List<Expense> findByIncomingPaymentDateAndExpenseTypes(List<ExpenseType> types) {
+        return repository.findByIncomingPaymentDateAndTypes(types);
+    }
 }

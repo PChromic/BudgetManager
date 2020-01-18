@@ -4,6 +4,7 @@ import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.service.OperationService;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -16,17 +17,17 @@ public class OperationController {
         this.service = operationService;
     }
 
-    @PostMapping("/operations")
+    @PostMapping(value = "/operations")
     void add(@RequestBody Operation operation) {
         service.add(operation);
     }
 
-    @DeleteMapping("/operations/{id}")
+    @DeleteMapping(value = "/operations/{id}")
     void remove(@RequestParam String id) {
         service.remove(Long.valueOf(id));
     }
 
-    @PutMapping("/operations/{id}")
+    @PutMapping(value = "/operations/{id}")
     void update(@RequestBody Operation operation, @RequestParam Long id) {
         service.update(operation);
     }
@@ -36,19 +37,32 @@ public class OperationController {
     Operation one(@PathVariable  String id) {
         return service.findOne(Long.valueOf(id));
     }
+/*
+    @GetMapping(value="/operations")
+    @ResponseBody
+    List<Operation> byDate(@RequestParam(required = false, name="operationDate")  String date) {
+        System.out.println("searching for operations within given date" + date);
+        return service.getByDateAfter(LocalDate.parse(date));
+    }
+    */
+    @GetMapping(value = "/operations")
+    @ResponseBody
+    List<Operation> byDate(@RequestParam String date) {
+        System.out.println("searching for operations within given date" + date);
+        return service.getByDateAfter(LocalDate.parse(date));
+    }
 
-
-    @GetMapping("/operations")
+    @GetMapping(value = "/operations")
     List<Operation> all() {
         return service.getAll();
     }
 
-    @GetMapping("/operations/income")
+    @GetMapping(value = "/operations/income")
     List<Operation> income() {
         return service.getByHighestIncome();
     }
 
-    @GetMapping("/operations/expense")
+    @GetMapping(value = "/operations/expense")
     List<Operation> expense() {
         return service.getByHighestExpense();
     }

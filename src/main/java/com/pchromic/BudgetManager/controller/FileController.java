@@ -15,7 +15,7 @@ public class FileController {
 
     @GetMapping("/file/open")
     void openFile(@RequestParam(name = "path") String path) {
-        String filePath = "E://Projects/BudgetManager/assets/" + path;
+        String filePath = "E://Projects/Angular/BudgetManager/src/assets/" + path;
         service.openFile(filePath);
     }
 

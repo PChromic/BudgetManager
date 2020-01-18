@@ -107,7 +107,7 @@ public class OperationService {
         return Operation.builder()
                 .id(Long.valueOf(row.getCell(0).getStringCellValue()))
                 .operationDate(convertToLocalDateViaInstant(row.getCell(1).getDateCellValue()))
-                .operationClass(setOperationClass(BigDecimal.valueOf(row.getCell(4).getNumericCellValue()).abs()))
+                .operationClass(setOperationClass(BigDecimal.valueOf(row.getCell(4).getNumericCellValue())))
                 .transType(type)
                 .amount(BigDecimal.valueOf(row.getCell(4).getNumericCellValue()).abs())
                 .currency(Currency.getInstance(row.getCell(5).getStringCellValue()))
@@ -145,6 +145,7 @@ public class OperationService {
     }
 
     private OperationClass setOperationClass(BigDecimal money) {
+        System.out.println(money);
         return money.signum() > 0 ? OperationClass.CREDIT : OperationClass.DEBIT;
     }
 
