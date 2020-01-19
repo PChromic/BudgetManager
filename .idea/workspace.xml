@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228a29bd-aac8-4814-a0a5-26d47e2ed7c5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/pchromic/BudgetManager/repository/ExpenseRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BudgetManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BudgetManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Historia_Rachunku.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Historia_Rachunku.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Historia_Rachunku2.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/BudgetManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/BudgetManagerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/SpringSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/SpringSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/ExpenseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/ExpenseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/domain/expense/Expense.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/domain/expense/Expense.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/ExpenseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/ExpenseType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/TransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/TransactionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/repository/CustomizedOperationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/repository/CustomizedOperationRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/repository/ExpenseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/repository/ExpenseRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/repository/OperationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/repository/OperationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/ExpenseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/ExpenseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/OperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/OperationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/pchromic/BudgetManager/OperationRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/pchromic/BudgetManager/repository/OperationRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pchromic/BudgetManager/BudgetManagerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pchromic/BudgetManager/BudgetManagerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pchromic/BudgetManager/repository/OperationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pchromic/BudgetManager/repository/OperationRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/pchromic/BudgetManager/service/OperationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/pchromic/BudgetManager/service/OperationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/pchromic/BudgetManager/OperationRepositoryTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -121,8 +97,8 @@
       <file leaf-file-name="OperationController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="310">
+              <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -255,7 +231,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1040" />
@@ -268,8 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -384,6 +358,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -615,8 +591,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -633,7 +608,7 @@
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3297062" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.10607676" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.10714286" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
@@ -1021,8 +996,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="310">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
         </state>
       </provider>
     </entry>

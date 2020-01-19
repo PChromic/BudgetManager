@@ -45,7 +45,7 @@ public class OperationController {
         return service.getByDateAfter(LocalDate.parse(date));
     }
     */
-    @GetMapping(value = "/operations")
+    @GetMapping(value = "/operations/params")
     @ResponseBody
     List<Operation> byDate(@RequestParam String date) {
         System.out.println("searching for operations within given date" + date);
