@@ -5,6 +5,8 @@ import com.pchromic.BudgetManager.enums.OperationClass;
 import com.pchromic.BudgetManager.enums.TransactionType;
 import com.pchromic.BudgetManager.repository.OperationRepository;
 import org.apache.poi.ss.usermodel.Row;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -73,6 +75,10 @@ public class OperationService {
 
     public List<Operation> getByDateAfter(LocalDate after) {
         return repository.findByOperationDateAfter(after);
+    }
+
+    public Page<Operation> findPaginatedOperations(int page, int size) {
+        return repository.findAll(new PageRequest(page, size));
     }
 
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FILES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -164,4 +170,6 @@ public class OperationService {
         amountString = amountString.replaceAll("\\s+", "");
         return amountString;
     }
+
+
 }

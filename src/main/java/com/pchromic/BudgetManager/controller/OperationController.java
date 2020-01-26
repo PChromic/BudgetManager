@@ -2,6 +2,7 @@ package com.pchromic.BudgetManager.controller;
 
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.service.OperationService;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
@@ -37,14 +38,7 @@ public class OperationController {
     Operation one(@PathVariable  String id) {
         return service.findOne(Long.valueOf(id));
     }
-/*
-    @GetMapping(value="/operations")
-    @ResponseBody
-    List<Operation> byDate(@RequestParam(required = false, name="operationDate")  String date) {
-        System.out.println("searching for operations within given date" + date);
-        return service.getByDateAfter(LocalDate.parse(date));
-    }
-    */
+
     @GetMapping(value = "/operations/params")
     @ResponseBody
     List<Operation> byDate(@RequestParam String date) {
@@ -67,5 +61,22 @@ public class OperationController {
         return service.getByHighestExpense();
     }
 
+    // pagination attempt
+    @RequestMapping(
+            value = "/operations",
+            params = { "page", "size" },
+            method = RequestMethod.GET
+    )
+    public Page<Operation> findPaginatedOperations(
+            @RequestParam("page") int page, @RequestParam("size") int size) {
+
+        Page<Operation> resultPage = service.findPaginatedOperations(page, size);
+        if (page > resultPage.getTotalPages()) {
+            throw new NullPointerException();
+
+        }
+
+        return resultPage;
+    }
 
 }

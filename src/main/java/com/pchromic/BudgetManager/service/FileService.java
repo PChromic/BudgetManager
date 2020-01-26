@@ -40,6 +40,7 @@ public class FileService {
 
     public void readFile() {
         //Get first sheet from the workbook
+        System.out.println(workbook);
         HSSFSheet sheet = workbook.getSheetAt(0);
         readRow(sheet);
     }

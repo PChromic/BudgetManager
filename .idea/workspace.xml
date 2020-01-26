@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="228a29bd-aac8-4814-a0a5-26d47e2ed7c5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Historia_Rachunku.xls" beforeDir="false" afterPath="$PROJECT_DIR$/Historia_Rachunku.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/TransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/TransactionType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/OperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/OperationService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,44 +59,8 @@
       <file leaf-file-name="OperationService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/OperationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="134" column="30" lean-forward="true" selection-start-line="134" selection-start-column="30" selection-end-line="134" selection-end-column="30" />
-              <folding>
-                <element signature="e#1928#1929#0" expanded="true" />
-                <element signature="e#1993#1994#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperationClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/OperationClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/FileService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/FileController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -105,8 +68,26 @@
       <file leaf-file-name="OperationController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+            <state relative-caret-position="136">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding>
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#798#799#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#1051#1052#0" expanded="true" />
+                <element signature="e#1107#1108#0" expanded="true" />
+                <element signature="e#1445#1446#0" expanded="true" />
+                <element signature="e#1484#1485#0" expanded="true" />
+                <element signature="e#1562#1563#0" expanded="true" />
+                <element signature="e#1613#1614#0" expanded="true" />
+                <element signature="e#1693#1694#0" expanded="true" />
+                <element signature="e#1745#1746#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -162,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/impl/FileServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/impl/FileService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/impl/OperationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/impl/OperationService.java" />
@@ -209,9 +189,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/BudgetManagerApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/ExpenseType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/repository/OperationRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/FileController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/TransactionType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/FileService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/OperationService.java" />
       </list>
     </option>
@@ -252,9 +233,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -368,6 +347,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -537,7 +518,7 @@
       <patterns />
     </configuration>
     <list>
-      <item itemvalue="JUnit.OperationRepositoryTest.shouldGetOperationWithHighestIncome" />
+      <item itemvalue="JUnit.OperationRepositoryTest.shouldGetByDateBetween" />
       <item itemvalue="Application.BudgetManagerApplication" />
       <item itemvalue="JUnit.OperationRepositoryTest.shouldGetByOperationClassAndAmountGreaterThan" />
       <item itemvalue="JUnit.ExpenseRepositoryTest.findByIncomingExpenses" />
@@ -599,6 +580,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -611,45 +593,24 @@
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.2883569" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.17697228" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.24265505" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.45593035" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.3297062" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.1988273" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.28997868" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49946696" weight="0.2883569" />
-      <window_info anchor="right" id="Palette" order="2" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="DB Execution Console" order="5" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.28668684" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.3297062" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.45662847" />
-      <window_info id="DB Browser" order="2" />
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49946696" weight="0.2883569" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.3297062" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.2883569" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info id="Capture Tool" order="3" />
       <window_info anchor="bottom" id="Find" order="10" weight="0.32317737" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.17697228" />
-      <window_info id="Favorites" order="4" side_tool="true" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -963,17 +924,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/FileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/repository/OperationRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/TransactionType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -989,10 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        <state relative-caret-position="252">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1003,21 +964,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/enums/TransactionType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/controller/OperationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#1562#1563#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1745#1746#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pchromic/BudgetManager/service/OperationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="134" column="30" lean-forward="true" selection-start-line="134" selection-start-column="30" selection-end-line="134" selection-end-column="30" />
-          <folding>
-            <element signature="e#1928#1929#0" expanded="true" />
-            <element signature="e#1993#1994#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
         </state>
       </provider>
     </entry>
