@@ -17,6 +17,9 @@ public class OperationService {
 
     private final OperationRepository repository;
 
+    // for test purposes
+    int i = 0;
+
     public OperationService(OperationRepository operationRepository) {
         this.repository = operationRepository;
     }
@@ -119,9 +122,8 @@ public class OperationService {
 
     private TransactionType getTransactionType(String transactionType) {
         TransactionType type = TransactionType.getByDescription(transactionType);
-
+        System.out.println(i++);
         switch (type) {
-
             case TRANSFER:
                 return TransactionType.TRANSFER;
             case CARD_PAYMENT:
@@ -132,6 +134,10 @@ public class OperationService {
                 return TransactionType.CARD_FEE;
             case ACC_TRANSFER:
                 return TransactionType.ACC_TRANSFER;
+            case REFUND:
+                return TransactionType.REFUND;
+            case CORRECTION:
+                return TransactionType.CORRECTION;
             default:
                 throw new IllegalArgumentException("This type of transaction is not supported");
         }
@@ -145,7 +151,6 @@ public class OperationService {
     }
 
     private OperationClass setOperationClass(BigDecimal money) {
-        System.out.println(money);
         return money.signum() > 0 ? OperationClass.CREDIT : OperationClass.DEBIT;
     }
 

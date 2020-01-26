@@ -5,7 +5,9 @@ public enum TransactionType {
     TRANSFER("Przelew"),
     ACC_TRANSFER("Przelew na rachunek"),
     CARD_FEE("Opłata za kartę"),
-    ATM_WITHDRAW("Wypłata z bankomatu");
+    ATM_WITHDRAW("Wypłata z bankomatu"),
+    REFUND("Zwrot płatności kartą"),
+    CORRECTION("Korekta");
 
     private final String description;
 
