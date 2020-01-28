@@ -51,6 +51,10 @@ public class OperationService {
     }
 
     public List<Operation> getAll() {
+/*        List<Operation> operations = repository.findAll();
+        Collections.sort(operations, Collections.reverseOrder());
+        return operations;*/
+
         return repository.findAll();
     }
 
@@ -93,24 +97,16 @@ public class OperationService {
 
       /*  id = Long.valueOf(row.getCell(0).getStringCellValue());
         operation.setId(id);
-
         LocalDate operationDate = convertToLocalDateViaInstant(row.getCell(1).getDateCellValue());
         operation.setOperationDate(operationDate);
-
-
-
         amount = BigDecimal.valueOf(row.getCell(4).getNumericCellValue()).abs();
         operation.setAmount(amount);
-
         Currency cur = Currency.getInstance(row.getCell(5).getStringCellValue());
         operation.setCurrency(cur);
-
         balance = BigDecimal.valueOf(row.getCell(6).getNumericCellValue());
         operation.setEndingBalance(balance);
-
         stringValue = row.getCell(8).getStringCellValue();
         operation.setDescription(stringValue);
-
         operation.setOperationClass(setOperationClass(amount));*/
 
         return Operation.builder()

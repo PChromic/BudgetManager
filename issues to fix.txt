@@ -1,0 +1,4 @@
+* przycisk select file dzia³a tylko raz, trzeba odœwie¿yæ
+* jak wczytujê plik to robi nie tylko insert ale te¿ select - nie wiem czemu. Najpierw select potem insert.
+* przy otwieraniu modala w operations zmienia mi sie tlo - widac jego ruch. Nie wiem czemu
+* 
