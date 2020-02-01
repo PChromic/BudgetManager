@@ -32,6 +32,8 @@ public class FileService {
         try {
             FileInputStream excelFile = new FileInputStream(new File(path));
             workbook = new HSSFWorkbook(excelFile);
+            HSSFSheet sheet = workbook.getSheetAt(0);
+            readRow(sheet);
         } catch (IOException e) {
             e.printStackTrace();
         }

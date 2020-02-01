@@ -21,6 +21,7 @@ public class FileController {
         String filePath = new File("").getAbsolutePath() + "\\" + path;
         System.out.println(filePath);
         service.openFile(filePath);
+        //service.readFile();
     }
 
     @GetMapping("/file/read")
