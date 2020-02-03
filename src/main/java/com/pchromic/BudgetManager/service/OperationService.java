@@ -36,11 +36,9 @@ public class OperationService {
         }
     }
 
-
     public Operation add(Operation operation) {
         return repository.save(operation);
     }
-
 
     public void remove(Long id) {
         repository.deleteById(id);
@@ -95,22 +93,16 @@ public class OperationService {
         transType = row.getCell(3).getStringCellValue();
         type = getTransactionType(transType);
 
-      /*  id = Long.valueOf(row.getCell(0).getStringCellValue());
-        operation.setId(id);
-        LocalDate operationDate = convertToLocalDateViaInstant(row.getCell(1).getDateCellValue());
-        operation.setOperationDate(operationDate);
-        amount = BigDecimal.valueOf(row.getCell(4).getNumericCellValue()).abs();
-        operation.setAmount(amount);
-        Currency cur = Currency.getInstance(row.getCell(5).getStringCellValue());
-        operation.setCurrency(cur);
-        balance = BigDecimal.valueOf(row.getCell(6).getNumericCellValue());
-        operation.setEndingBalance(balance);
-        stringValue = row.getCell(8).getStringCellValue();
-        operation.setDescription(stringValue);
-        operation.setOperationClass(setOperationClass(amount));*/
+        Operation operation = new Operation();
+        operation.setOperationClass(setOperationClass(BigDecimal.valueOf(row.getCell(4).getNumericCellValue())));
+        operation.setAmount(BigDecimal.valueOf(row.getCell(4).getNumericCellValue()).abs());
+        operation.setCurrency(Currency.getInstance(row.getCell(5).getStringCellValue()));
+        operation.setEndingBalance(BigDecimal.valueOf(row.getCell(6).getNumericCellValue()));
 
-        return Operation.builder()
-                .id(Long.valueOf(row.getCell(0).getStringCellValue()))
+
+        return operation;
+
+/*        return Operation.builder()
                 .operationDate(convertToLocalDateViaInstant(row.getCell(1).getDateCellValue()))
                 .operationClass(setOperationClass(BigDecimal.valueOf(row.getCell(4).getNumericCellValue())))
                 .transType(type)
@@ -118,8 +110,7 @@ public class OperationService {
                 .currency(Currency.getInstance(row.getCell(5).getStringCellValue()))
                 .endingBalance(BigDecimal.valueOf(row.getCell(6).getNumericCellValue()))
                 .description(row.getCell(8).getStringCellValue())
-                .build();
-        //operations.add(operation);
+                .build();*/
     }
 
     private TransactionType getTransactionType(String transactionType) {
@@ -156,16 +147,6 @@ public class OperationService {
         return money.signum() > 0 ? OperationClass.CREDIT : OperationClass.DEBIT;
     }
 
-    private LocalDate parseStringToLocalDate(String date) {
-        return LocalDate.parse(date);
-    }
-
-    private String stringToBigDecimalFormat(String s) {
-        String amountString = s;
-        amountString = amountString.replaceAll(",", ".");
-        amountString = amountString.replaceAll("\\s+", "");
-        return amountString;
-    }
 
 
 }

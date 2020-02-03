@@ -1,26 +1,15 @@
 package com.pchromic.BudgetManager.repository;
 
-import com.pchromic.BudgetManager.domain.expense.Expense;
-import com.pchromic.BudgetManager.domain.expense.QExpense;
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.operation.QOperation;
-import com.pchromic.BudgetManager.enums.ExpenseType;
 import com.pchromic.BudgetManager.enums.OperationClass;
 import com.pchromic.BudgetManager.enums.TransactionType;
-import com.querydsl.core.BooleanBuilder;
-import com.querydsl.core.types.Order;
 import com.querydsl.core.types.OrderSpecifier;
 import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
-import com.querydsl.core.types.dsl.StringExpression;
-import com.querydsl.core.types.dsl.StringPath;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
-import org.springframework.data.querydsl.binding.QuerydslBinderCustomizer;
-import org.springframework.data.querydsl.binding.QuerydslBindings;
-import org.springframework.data.querydsl.binding.SingleValueBinding;
 import org.springframework.stereotype.Repository;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
@@ -62,7 +51,6 @@ public interface OperationRepository extends JpaRepository<Operation, Long>,
     List<Operation> findByOperationClassAndAmountLessThanEqual(OperationClass operationClass, BigDecimal amount);
 
     List<Operation> findByDescriptionContaining(String description);
-
 
 
 }

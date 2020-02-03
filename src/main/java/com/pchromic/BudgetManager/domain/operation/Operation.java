@@ -23,11 +23,11 @@ public class Operation {
     }
 
     @Id
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
     @Column(name = "operation_date", nullable = false)
     LocalDate operationDate;
-    // LocalDate orderDate;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "operation_class", nullable = false)
@@ -49,7 +49,7 @@ public class Operation {
     @Column(name = "description", nullable = false)
     String description;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
 }

@@ -9,7 +9,9 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "USER")
@@ -19,7 +21,7 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     @Column(nullable = false, length = 50)
     private String userName;
@@ -35,7 +37,7 @@ public class User implements Serializable {
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )
-    private List<Operation> operations = new ArrayList<>();
+    private Set<Operation> operations = new HashSet<>();
 
     public void addOperation(Operation operation) {
         operations.add(operation);
@@ -52,7 +54,7 @@ public class User implements Serializable {
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )
-    private List<Report> reports = new ArrayList<>();
+    private Set<Report> reports = new HashSet<>();
 
     public void addReport(Report report) {
         reports.add(report);
@@ -69,7 +71,7 @@ public class User implements Serializable {
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )
-    private List<Expense> expenses = new ArrayList<>();
+    private Set<Expense> expenses = new HashSet<>();
 
     public void addExpense(Expense expense) {
         expenses.add(expense);
