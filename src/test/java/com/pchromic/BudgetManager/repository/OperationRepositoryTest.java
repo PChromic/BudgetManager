@@ -1,18 +1,15 @@
-
 package com.pchromic.BudgetManager.repository;
 
 
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.enums.OperationClass;
 import com.pchromic.BudgetManager.enums.TransactionType;
-import com.pchromic.BudgetManager.repository.OperationRepository;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
@@ -72,6 +69,7 @@ public class OperationRepositoryTest {
         assertThat(between, containsInAnyOrder(operation1));
 
     }
+
     @Test
     public void shouldGetByOperationClassAndAmountGreaterThan() {
         OperationClass opClass = OperationClass.DEBIT;
@@ -85,9 +83,9 @@ public class OperationRepositoryTest {
     }
 
     @Test
-    public void shouldGetOperationWithHighestIncome () {
+    public void shouldGetOperationWithHighestIncome() {
 
-     List<Operation> byHighestExpense = repository.findByHighestIncome();
+        List<Operation> byHighestExpense = repository.findByHighestIncome();
 
         Assert.assertEquals(byHighestExpense.size(), 1);
         Assert.assertEquals(1010.00, byHighestExpense.get(0).getAmount());
@@ -96,9 +94,9 @@ public class OperationRepositoryTest {
     @Test
     public void shouldGetOperationsAfterDate() {
 
-       // List<Operation> byHighestExpense = repository.findByOperationDateAfter(LocalDate.of(2019, 8, 4));
+        // List<Operation> byHighestExpense = repository.findByOperationDateAfter(LocalDate.of(2019, 8, 4));
 
-     //   Assert.assertEquals(2019 - 07 - 04, byHighestExpense);
+        //   Assert.assertEquals(2019 - 07 - 04, byHighestExpense);
 
     }
 }

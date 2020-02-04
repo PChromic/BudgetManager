@@ -15,10 +15,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.contains;
-import static org.hamcrest.Matchers.containsInAnyOrder;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ExpenseRepositoryTest {
@@ -30,7 +26,7 @@ public class ExpenseRepositoryTest {
     public void setUp() throws Exception {
         Expense expense = Expense.builder()
                 .id(1L)
-                .paymentDate(LocalDate.of(2019,10,01))
+                .paymentDate(LocalDate.of(2019, 10, 01))
                 .expenseType(ExpenseType.DEBT)
                 .build();
 
@@ -38,7 +34,7 @@ public class ExpenseRepositoryTest {
 
         Expense expense1 = Expense.builder()
                 .id(2L)
-                .paymentDate(LocalDate.of(2019,10,02))
+                .paymentDate(LocalDate.of(2019, 10, 02))
                 .expenseType(ExpenseType.ENTERTAINMENT)
                 .build();
 
@@ -49,16 +45,16 @@ public class ExpenseRepositoryTest {
     public void findByIncomingExpenses() {
         List<Expense> expenses = repository.findByIncomingPaymentDate();
 
-        Assert.assertEquals(2,expenses.size());
+        Assert.assertEquals(2, expenses.size());
     }
 
     @Test
     public void findByIncomingExpensesAndTypes() {
-        List<ExpenseType> types = new ArrayList<>(Arrays.asList(ExpenseType.DEBT,ExpenseType.ENTERTAINMENT));
+        List<ExpenseType> types = new ArrayList<>(Arrays.asList(ExpenseType.DEBT, ExpenseType.ENTERTAINMENT));
 
         List<Expense> expenses = repository.findByIncomingPaymentDateAndTypes(types);
 
-        Assert.assertEquals(2,expenses.size());
+        Assert.assertEquals(2, expenses.size());
 
     }
 

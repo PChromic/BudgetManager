@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Iterator;
+import java.util.*;
 
 @Service
 public class FileService {
@@ -32,19 +32,31 @@ public class FileService {
         try {
             FileInputStream excelFile = new FileInputStream(new File(path));
             workbook = new HSSFWorkbook(excelFile);
-            HSSFSheet sheet = workbook.getSheetAt(0);
-            readRow(sheet);
-        } catch (IOException e) {
+         } catch (IOException e) {
             e.printStackTrace();
         }
+        readFile();
         System.out.println("Reading file ended");
     }
 
     public void readFile() {
         //Get first sheet from the workbook
-        System.out.println(workbook);
+  /*      System.out.println(workbook);
         HSSFSheet sheet = workbook.getSheetAt(0);
-        readRow(sheet);
+        readRow(sheet);*/
+
+        HSSFSheet sheet = workbook.getSheetAt(0);
+        Set<Operation> operations = new LinkedHashSet<>();
+
+        Iterator<Row> rowIterator = sheet.iterator();
+        while (rowIterator.hasNext()) {
+            Row row = rowIterator.next();
+            if (row.getRowNum() == 0) {
+                continue; //just skip the rows if row number is 0 or 1
+            }
+            operations.add(operationService.getOperationFromRow(row));
+        }
+        operationService.addOperations(operations);
     }
 
 
@@ -52,6 +64,7 @@ public class FileService {
 
     }
 
+/*
     private void readRow(HSSFSheet sheet) {
 
         Iterator<Row> rowIterator = sheet.iterator();
@@ -69,6 +82,7 @@ public class FileService {
         Operation operation = operationService.getOperationFromRow(row);
         operationService.add(operation);
     }
+*/
 
 
 }

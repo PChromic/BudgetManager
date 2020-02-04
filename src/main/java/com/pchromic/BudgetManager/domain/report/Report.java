@@ -3,7 +3,7 @@ package com.pchromic.BudgetManager.domain.report;
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.user.User;
 import com.pchromic.BudgetManager.enums.ReportType;
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -26,14 +26,14 @@ public class Report implements Serializable {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @ManyToMany( cascade = {
+    @ManyToMany(cascade = {
             CascadeType.PERSIST,
             CascadeType.MERGE
     })
-    @JoinTable( name = "report_operation",
-        joinColumns = @JoinColumn(name = "report_id"),
-        inverseJoinColumns = @JoinColumn(name = "operation_id")
+    @JoinTable(name = "report_operation",
+            joinColumns = @JoinColumn(name = "report_id"),
+            inverseJoinColumns = @JoinColumn(name = "operation_id")
     )
     private Set<Operation> operations = new HashSet<>();
 
- }
+}

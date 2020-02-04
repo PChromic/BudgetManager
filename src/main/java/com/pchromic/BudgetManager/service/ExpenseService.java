@@ -77,7 +77,7 @@ public class ExpenseService {
         return repository.findByDescriptionContaining(description);
     }
 
-    public List<Expense> findByIncomingPaymentDate( ) {
+    public List<Expense> findByIncomingPaymentDate() {
         return repository.findByIncomingPaymentDate();
     }
 

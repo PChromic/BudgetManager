@@ -39,7 +39,7 @@ public class UserService {
         return optional.orElseThrow(IllegalArgumentException::new);
     }
 
-    public List<User> getByUserType(UserType userType){
+    public List<User> getByUserType(UserType userType) {
         return repository.getByUserType(userType);
     }
 

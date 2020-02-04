@@ -6,6 +6,7 @@ import com.pchromic.BudgetManager.enums.OperationClass;
 import com.pchromic.BudgetManager.enums.TransactionType;
 import com.pchromic.BudgetManager.repository.OperationRepository;
 import com.querydsl.core.types.Predicate;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,6 +32,7 @@ public class OperationServiceTest {
 
     private Operation operation;
     private Operation operation1;
+    private Operation operation2;
 
     @Before
     public void setData() {
@@ -45,7 +47,7 @@ public class OperationServiceTest {
         operation.setCurrency(Currency.getInstance("PLN"));
         repository.save(operation);
 
-        operation1 = new Operation();
+/*        operation1 = new Operation();
         operation1.setId(2L);
         operation1.setAmount(new BigDecimal(1010));
         operation1.setTransType(TransactionType.ACC_TRANSFER);
@@ -54,10 +56,28 @@ public class OperationServiceTest {
         operation1.setEndingBalance(BigDecimal.ONE);
         operation1.setDescription("123");
         operation1.setCurrency(Currency.getInstance("PLN"));
-        repository.save(operation1);
+        repository.save(operation1);*/
+
+        operation2 = new Operation();
+        operation2.setId(1L);
+        operation2.setAmount(new BigDecimal(100));
+        operation2.setTransType(TransactionType.ACC_TRANSFER);
+        operation2.setOperationDate(LocalDate.now());
+        operation2.setOperationClass(OperationClass.DEBIT);
+        operation2.setEndingBalance(BigDecimal.ONE);
+        operation2.setDescription("123");
+        operation2.setCurrency(Currency.getInstance("PLN"));
+        repository.save(operation2);
 
     }
 
+    @Test
+    public void shouldAvoidDuplicates() {
+
+        // then
+        Assert.assertEquals(1, repository.findAll().size());
+
+    }
 
     @Test
     public void shouldGetOperationWithHighestIncome() {

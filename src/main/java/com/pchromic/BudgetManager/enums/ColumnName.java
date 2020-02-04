@@ -20,7 +20,7 @@ public enum ColumnName {
         this.description = description;
     }
 
-    public static boolean isPresent(final String description){
+    public static boolean isPresent(final String description) {
         return Arrays.stream(ColumnName.values())
                 .anyMatch(name -> name.description.equals(description));
     }

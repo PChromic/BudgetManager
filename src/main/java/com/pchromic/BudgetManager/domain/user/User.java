@@ -4,13 +4,12 @@ import com.pchromic.BudgetManager.domain.expense.Expense;
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.report.Report;
 import com.pchromic.BudgetManager.enums.UserType;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -39,6 +38,7 @@ public class User implements Serializable {
     )
     private Set<Operation> operations = new HashSet<>();
 
+
     public void addOperation(Operation operation) {
         operations.add(operation);
         operation.setUser(this);
@@ -48,6 +48,7 @@ public class User implements Serializable {
         operations.remove(operation);
         operation.setUser(null);
     }
+
 
     @OneToMany(
             mappedBy = "user",

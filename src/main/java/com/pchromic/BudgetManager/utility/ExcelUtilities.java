@@ -65,7 +65,7 @@ public class ExcelUtilities implements FileUtilities {
     }
 
 
-    private void readRow (HSSFSheet sheet) {
+    private void readRow(HSSFSheet sheet) {
 
         Iterator<Row> rowIterator = sheet.iterator();
         String columnName = rowIterator.next().getCell(0).getStringCellValue();
@@ -93,7 +93,6 @@ public class ExcelUtilities implements FileUtilities {
         }
         // System.out.print(cell + "\t");*//*
     }*/
-
 
 
     @Override

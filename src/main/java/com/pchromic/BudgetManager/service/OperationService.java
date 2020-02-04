@@ -29,7 +29,7 @@ public class OperationService {
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ REPOSITORY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-    public void addOperations(List<Operation> operations) {
+    public void addOperations(Set<Operation> operations) {
         for (Operation o :
                 operations) {
             repository.save(o);
@@ -93,16 +93,9 @@ public class OperationService {
         transType = row.getCell(3).getStringCellValue();
         type = getTransactionType(transType);
 
-        Operation operation = new Operation();
-        operation.setOperationClass(setOperationClass(BigDecimal.valueOf(row.getCell(4).getNumericCellValue())));
-        operation.setAmount(BigDecimal.valueOf(row.getCell(4).getNumericCellValue()).abs());
-        operation.setCurrency(Currency.getInstance(row.getCell(5).getStringCellValue()));
-        operation.setEndingBalance(BigDecimal.valueOf(row.getCell(6).getNumericCellValue()));
 
-
-        return operation;
-
-/*        return Operation.builder()
+        return Operation.builder()
+                .id(Long.valueOf(row.getCell(0).getStringCellValue()))
                 .operationDate(convertToLocalDateViaInstant(row.getCell(1).getDateCellValue()))
                 .operationClass(setOperationClass(BigDecimal.valueOf(row.getCell(4).getNumericCellValue())))
                 .transType(type)
@@ -110,7 +103,7 @@ public class OperationService {
                 .currency(Currency.getInstance(row.getCell(5).getStringCellValue()))
                 .endingBalance(BigDecimal.valueOf(row.getCell(6).getNumericCellValue()))
                 .description(row.getCell(8).getStringCellValue())
-                .build();*/
+                .build();
     }
 
     private TransactionType getTransactionType(String transactionType) {
@@ -146,7 +139,6 @@ public class OperationService {
     private OperationClass setOperationClass(BigDecimal money) {
         return money.signum() > 0 ? OperationClass.CREDIT : OperationClass.DEBIT;
     }
-
 
 
 }

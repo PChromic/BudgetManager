@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 public interface FileUtilities {
 
     void openFile(String path);
+
     void saveFile(String path);
 
 }

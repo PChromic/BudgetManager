@@ -35,7 +35,7 @@ public class OperationController {
 
 
     @GetMapping(value = "/operations/{id}")
-    Operation one(@PathVariable  String id) {
+    Operation one(@PathVariable String id) {
         return service.findOne(Long.valueOf(id));
     }
 
@@ -64,7 +64,7 @@ public class OperationController {
     // pagination attempt
     @RequestMapping(
             value = "/operations",
-            params = { "page", "size" },
+            params = {"page", "size"},
             method = RequestMethod.GET
     )
     public Page<Operation> findPaginatedOperations(

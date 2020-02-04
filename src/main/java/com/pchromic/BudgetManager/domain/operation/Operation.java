@@ -3,8 +3,10 @@ package com.pchromic.BudgetManager.domain.operation;
 import com.pchromic.BudgetManager.domain.user.User;
 import com.pchromic.BudgetManager.enums.OperationClass;
 import com.pchromic.BudgetManager.enums.TransactionType;
-import lombok.*;
-
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -13,6 +15,7 @@ import java.util.Currency;
 
 @Entity
 @Table(name = "OPERATION")
+
 @Data
 @AllArgsConstructor
 @Builder(access = AccessLevel.PUBLIC)
@@ -23,7 +26,7 @@ public class Operation {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", unique = true, nullable = false)
     private long id;
 
     @Column(name = "operation_date", nullable = false)

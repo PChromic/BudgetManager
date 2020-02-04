@@ -9,8 +9,8 @@ public final class OperationPredicates {
     OperationPredicates() {
     }
 
-    public static Predicate hasDateBetween(LocalDate left,LocalDate right){
-        return QOperation.operation.operationDate.between(left,right);
+    public static Predicate hasDateBetween(LocalDate left, LocalDate right) {
+        return QOperation.operation.operationDate.between(left, right);
     }
 
 

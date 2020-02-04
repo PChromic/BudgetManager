@@ -1,10 +1,7 @@
 package com.pchromic.BudgetManager.controller;
 
-import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.report.Report;
 import com.pchromic.BudgetManager.service.ReportService;
-import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -36,7 +33,7 @@ public class ReportController {
 
 
     @GetMapping(value = "/reports/{id}")
-    Report one(@PathVariable  String id) {
+    Report one(@PathVariable String id) {
         return service.findOne(Long.valueOf(id));
     }
 

@@ -33,7 +33,7 @@ public class ExpenseController {
 
 
     @GetMapping(value = "/expenses/{id}")
-    Expense one(@PathVariable  String id) {
+    Expense one(@PathVariable String id) {
         return service.findOne(Long.valueOf(id));
     }
 
