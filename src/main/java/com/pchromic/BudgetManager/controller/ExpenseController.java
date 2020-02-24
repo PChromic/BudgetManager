@@ -22,7 +22,7 @@ public class ExpenseController {
     }
 
     @DeleteMapping("/expenses/{id}")
-    void remove(@RequestParam String id) {
+    void remove(@PathVariable String id) {
         service.remove(Long.valueOf(id));
     }
 

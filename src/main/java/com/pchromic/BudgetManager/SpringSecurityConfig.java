@@ -22,9 +22,11 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers(HttpMethod.POST, "/operations/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/operations/**").permitAll()
+                .antMatchers(HttpMethod.DELETE, "/operations/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/expenses").permitAll()
                 .antMatchers(HttpMethod.POST, "/expenses").permitAll()
                 .antMatchers(HttpMethod.GET, "/expenses/**").permitAll()
-                .antMatchers(HttpMethod.GET, "/expenses").permitAll()
+                .antMatchers(HttpMethod.DELETE, "/expenses/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/file/**").permitAll()
                 .anyRequest().authenticated();
         http.cors();
