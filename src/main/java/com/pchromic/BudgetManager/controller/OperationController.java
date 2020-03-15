@@ -33,7 +33,6 @@ public class OperationController {
         service.update(operation);
     }
 
-
     @GetMapping(value = "/operations/{id}")
     Operation one(@PathVariable String id) {
         return service.findOne(Long.valueOf(id));

@@ -4,8 +4,7 @@ import com.pchromic.BudgetManager.domain.expense.Expense;
 import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.report.Report;
 import com.pchromic.BudgetManager.enums.UserType;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -16,6 +15,8 @@ import java.util.Set;
 @Table(name = "USER")
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User implements Serializable {
 
     @Id

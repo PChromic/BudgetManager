@@ -28,6 +28,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "/expenses/**").permitAll()
                 .antMatchers(HttpMethod.DELETE, "/expenses/**").permitAll()
                 .antMatchers(HttpMethod.GET, "/file/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/users/**").permitAll()
+                .antMatchers(HttpMethod.POST, "/users/**").permitAll()
+                .antMatchers(HttpMethod.DELETE, "/users/**").permitAll()
                 .anyRequest().authenticated();
         http.cors();
     }
