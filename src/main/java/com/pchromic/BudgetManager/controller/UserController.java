@@ -1,6 +1,5 @@
 package com.pchromic.BudgetManager.controller;
 
-import com.pchromic.BudgetManager.domain.operation.Operation;
 import com.pchromic.BudgetManager.domain.user.User;
 import com.pchromic.BudgetManager.service.UserService;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +18,7 @@ public class UserController {
 
     @PostMapping(value = "/users")
     void add(@RequestBody User user) {
+        System.out.println(user.getName());
         service.add(user);
     }
 
