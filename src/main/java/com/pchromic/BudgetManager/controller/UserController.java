@@ -4,6 +4,7 @@ import com.pchromic.BudgetManager.domain.user.User;
 import com.pchromic.BudgetManager.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -42,5 +43,9 @@ public class UserController {
         return service.getAll();
     }
 
-
+    @RequestMapping(value = "/username", method = RequestMethod.GET)
+    @ResponseBody
+    public String currentUserName(Principal principal) {
+        return principal.getName();
+    }
 }
